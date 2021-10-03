@@ -4,7 +4,10 @@
 int main(void)
 {
 	int x = _printf("Hello, %%%s%c%c", "World", '!', '\n');
-	printf("\n%d\n", x);
+	int y = printf("Hello, %%%s%c%c", "World", '!', '\n');
+
+	printf("x = %d\n", x);
+	printf("y = %d\n", y);
 
 	return (0);
 }

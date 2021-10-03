@@ -45,6 +45,7 @@ int _printf(const char *format, ...)
 				}
 				break;
 			default:
+				char_count++;
 				if (format[i + 1] == '%')
 				{
 					_putchar('%');
@@ -53,7 +54,6 @@ int _printf(const char *format, ...)
 				}
 				_putchar(format[i]);
 				_putchar(format[i + 1]);
-				char_count++;
 		}
 		i++;
 	}
