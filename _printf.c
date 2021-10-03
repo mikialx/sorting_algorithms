@@ -1,5 +1,4 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
  *
@@ -10,8 +9,6 @@ int _printf(const char *format, ...)
 	int char_count = 0; /* Total number of chars printed to stdout */
 	va_list ap; /* Contains the list of arguments passed after format */
 	int i; /* Used to loop through all characters in format */
-	int k; /* Used to loop through a string argument */
-	char *s; /* Holds string when a string argument is passed */
 
 	va_start(ap, format);
 
@@ -37,12 +34,7 @@ int _printf(const char *format, ...)
 				char_count++;
 				break;
 			case 's':
-				s = va_arg(ap, char*);
-				for (k = 0; s[k] != 0; k++)
-				{
-					_putchar(s[k]);
-					char_count++;
-				}
+				char_count += print_str(va_arg(ap, char*));
 				break;
 			default:
 				char_count++;
@@ -57,6 +49,5 @@ int _printf(const char *format, ...)
 		}
 		i++;
 	}
-
 	return (char_count);
 }
