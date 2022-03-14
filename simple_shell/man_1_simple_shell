@@ -1,8 +1,8 @@
-.TH HSH 1 "October 2021" Version(0.1) "SIMPLE SHELL MAN PAGE"
+.TH HSH 1 "Au 2021" Version(0.1) "SIMPLE SHELL MAN PAGE"
 .SH NAME
-.pp
+.PP
 .B hsh - Simple Shell
-.pp
+.PP
 .SH SYNOPSIS
 .PP
 .B ./hsh [command] [options]
@@ -118,6 +118,6 @@ https://github.com/mikialx/simple_shell
 .SH AUTHORS
 Written by:
 .PP
--Michael kifle.
+-Micheal kifle
 .PP
--Beza haile.
+-Beza Haile.
